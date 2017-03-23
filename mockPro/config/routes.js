@@ -1,6 +1,15 @@
 
 module.exports.routes = {
 
+
+  '/': {
+    view: 'homepage'
+  },
+
+  'get /products':{
+    view: '/products'
+    }
+
   // HTML Views
   '/': { view: 'homepage' },
   'get /login': { view: 'user/login' },
@@ -11,4 +20,5 @@ module.exports.routes = {
   'post /login': 'UserController.login',
   'post /signup': 'UserController.signup',
   '/logout': 'UserController.logout',
+
 };
