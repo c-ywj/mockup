@@ -13,7 +13,7 @@ module.exports = {
   login: function (req, res) {
 
     // See `api/responses/login.js`
-    return res.login({
+    return res.send({
       email: req.param('email'),
       password: req.param('password'),
       successRedirect: '/',
